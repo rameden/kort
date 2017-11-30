@@ -8,6 +8,11 @@ const adminUser = "admin";  //optionally change this
 const adminPassword = "admin"; //set this to something different and secure
 const secretHash = 'secret'; //change this to your own unique value (used for hash creation and salting)
 const uploadDir = './uploads/images';
+const allowGoogleAuth = false;
+
+//Google Authentication (via OAuth2) (Optional)
+const googleClientID = '';
+const googleClientSecret = '';
 
 //------------------------------------------------------------------
 
