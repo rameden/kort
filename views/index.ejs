@@ -15,7 +15,7 @@
 				</div>
 				<div class="row">
 					<div class='col-md-12'>
-						<div class="siteSubtitle text-center ">Card Sorting, Tree Testing, and Product Reaction Cards</div>
+						<div class="siteSubtitle text-center">Card Sorting, Tree Testing, and Product Reaction Cards</div>
 					</div>
 				</div>
 				<div class='row'>
@@ -39,7 +39,11 @@
 							<div class="alert alert-danger loginMessage"><%= loginMessage %></div>
 							<% } %>
 						</form>
-					</div>			
+						<br>
+						<% if (allowGoogleAuth) { %>
+							<a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span>   Login or Register via Google</a>
+						<% } %>
+					</div>
 				</div>
 			</div>	
 			<% if (version.length > 0) { %>
